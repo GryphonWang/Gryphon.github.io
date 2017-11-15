@@ -1,0 +1,237 @@
+.topBar{
+    height: 45px;
+    width: 100%;
+    background: url("../images/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 10;
+}
+.icon{
+    background: url("../images/sprites.png")no-repeat;
+    background-size:200px 200px;
+}
+.topBar .back{
+    width: 12px;
+    height: 19px;
+    background-position: -24px 0;
+    top: 14px;
+    left: 10px;
+}
+.topBar .menu{
+    width: 18px;
+    height: 18px;
+    background-position:-61px 0;
+    top: 12px;
+    right: 10px;
+}
+.topBar .cartTitle{
+    font-size: 16px;
+    font-family: "宋体";
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.tips{
+    width: 100%;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+.tips p{
+    display: inline-block;
+}
+.tips p:before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/safe_icon.png")no-repeat;
+    background-size:18px 18px;
+    vertical-align:top;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+
+.container .title{
+    height: 34px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: 10px;
+}
+.checkPoint{
+    left: 10px;
+    top: 8px;
+    width: 17px;
+    height: 17px;
+}
+.checkPoint>span{
+    display: block;
+     width: 17px;
+     height: 17px;
+     background: url("../images/shop-icon.png")no-repeat;
+     background-size:50px 100px;
+
+ }
+.checkPoint input{
+    width: 17px;
+    height: 17px;
+    opacity: 0;
+    z-index: 2;
+}
+.checkPoint input:checked + span{
+    background-position: -25px 0;
+}
+
+.container .title .right{
+    padding-left: 40px;
+    line-height: 34px;
+}
+.container .title .right span{
+    padding-left:22px;
+    font-size:14px;
+    background: url("../images/buy-logo.png")no-repeat;
+    background-size:18px 18px;
+}
+.container .title .right div{
+    padding-right: 10px;
+    font-size:14px;
+    color:#d8505c;
+}
+
+.container .cont{
+    background-color: #fff;
+}
+.container .cont .items{
+    padding:10px 10px 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.container .cont .right{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.container .cont .right>a{
+    display: inline-block;
+}
+.container .cont .right a img{
+    width: 80px;
+}
+.container .cont .right .goods{
+    margin-left: 85px;
+}
+.container .cont .right .goods a{
+    line-height: 15px;
+    font-size: 14px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+}
+.container .cont .right .goods .price{
+    height: 26px;
+    color: #d8505c;
+    padding-top: 5px;
+}
+.container .cont .right .goods .botl{
+    float:left;
+    height: 24px;
+}
+.container .goods .botl span{
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 24px;
+}
+.container .goods .botl input{
+    width: 32px;
+    height: 24px;
+    display: inline-block;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+    text-align: center;
+}
+.container .goods .botr{
+    bottom: 0;
+    right: 0;
+}
+.container .goods .botr span:first-child{
+    background: url("../images/delete_up.png")no-repeat;
+    background-size:18px 4px ;
+    width: 18px;
+    height: 4px;
+    display: block;
+    transition: all 0.4s;
+}
+.open{
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}
+.container .goods .botr span:last-child{
+    background: url("../images/delete_down.png")no-repeat;
+    background-size:17px 18px ;
+    width: 17px;
+    height: 18px;
+    display: block;
+}
+.popBox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: top 0.4s;
+}
+.popBox .textBox.active{
+     top:-20%;
+ }
+.popBox .textBox{
+    background-color: #fff;
+    width: 80%;
+    height: 131px;
+    border-radius: 10px;
+    top: 50%;
+    margin-top: -65px;
+    left: 10%;
+    transition:all 0.4s;
+}
+
+.popBox .textBox div:first-child{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    font-size:18px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.popBox .textBox .btn{
+    padding: 10px;
+}
+.popBox .textBox div span{
+    line-height: 36px;
+    width: 45%;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+.popBox .textBox div span:first-child{
+    font-size:14px;
+    border: 1px solid #e0e0e0;
+
+}
+.popBox .textBox div span:last-child{
+    background-color: #d8505c;
+    font-size:14px;
+    color:#fff;
+}
